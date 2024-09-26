@@ -13,7 +13,9 @@ log_file = './ollama_messages_0.dat'
 
 
 def get_data():
-    """ this template obtains data from an embedded system (SATCOM available in my repos) and isolates lat/long """
+    """ this template obtains data from an embedded system (SATCOM available in my repos) and isolates lat/long.
+    another example may instead be like "are coordinates x closer to coordinates y than previous coordinates" '
+    """
     data = comparse.com_listen(com_num='COM5', baud_rate=115200)
     data = data.split(',')
     return str(data[3] + str(', ') + data[4])
