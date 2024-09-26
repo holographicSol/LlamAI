@@ -1,0 +1,14 @@
+# Setup file. ping is intended to demonstrate the 'any application' rather than be a practical or efficient use of AI.
+# Comments used at the beginning of any line will be omitted by the parser.
+
+[
+
+{
+
+'COMMAND' : 'ping -n 4 8.8.8.8',
+'MAIN_INTERVAL' : 3,
+'QUERY' : 'Answer by responding exactly with wither True of False (like a pythonic returned bool). According to the ping, am I online?'
+
+}
+
+]

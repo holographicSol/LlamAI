@@ -1,0 +1,8 @@
+# Setup file. this simple is intended to demonstrate the application rather than be a practical or efficient use of AI.
+
+[
+'ping -n 4 8.8.8.8',
+3,
+'Answer only by responding exactly as Yes or No. According to the ping, am I online?'
+]
+

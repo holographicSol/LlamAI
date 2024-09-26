@@ -1,0 +1,40 @@
+Brainstorming:
+    External Embedded Systems: Pipe response over universal serial to be collected by embedded systems on the other end.
+
+    Navigation/Guidance: Is current longitude and latitude closer to a destination longitude and latitude than previous
+                         longitude and latitude?
+
+    Real Time Data: Embedded systems with sensors can provide real time data to query while also providing endpoint
+                    functionality.
+
+    Automation.
+
+    Discovery.
+
+
+The Run Once Setup:
+    Each query is in a new chat.
+    Commands are executed and command results queried with amnesia.
+
+
+Next Setup:
+    Each query is in the same conversation.
+    Commands are executed and command results queried with memory of previous queries and data.
+
+    External Modules (processes will be logging real-time data from external sensors for AI to use):
+        Logs output from SATCOM (or just a wtgps300) for ordinance and navigation. This data alone makes the AI extremely useful & powerful.
+        Logs output from Other sensors modules too.
+
+        example:
+            satcom.log
+            temperature.log
+            humidity.log
+            etc.
+
+        The embedded systems (sensors) can be very simple because they just need to write a sentence over serial,
+        likewise python on the computer side just has to listen and log to file.
+
+    Different Models for different inference modes:
+        llama is great for language while if we use a camera sensor, we will currently need an image AI, etc.
+        i really like llama so i will stick with things llama can do/sense/make-sense-of.
+

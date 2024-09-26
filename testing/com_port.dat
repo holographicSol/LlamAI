@@ -1,0 +1,12 @@
+# Comments used at the beginning of any line will be omitted by the parser.
+
+[
+
+{
+
+'COM' : 'COM5',
+'BAUD_RATE' : 115200,
+
+}
+
+]
