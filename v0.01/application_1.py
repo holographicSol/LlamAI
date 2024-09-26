@@ -33,6 +33,8 @@ def main():
                                      'Geolocate these coordinates: ' + str(data))
     print(r)
 
+    # do something, anything! on the local system, remote system(s), or send a message back over a COM port to control an embedded system
+
 
 if __name__ == '__main__':
     while True:
