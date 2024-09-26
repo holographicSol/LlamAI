@@ -30,8 +30,6 @@ def get_data():
 
 
 def main():
-    # retrieve message memory
-    askllama.load_ollama_log(log_file=log_file)
     # load data
     data = get_data()
     # ask a question about the data instead of the traditional way of creating infinite never ending  custom algorithms
@@ -46,6 +44,9 @@ def main():
 
 
 if __name__ == '__main__':
+    # retrieve message memory
+    askllama.load_ollama_log(log_file=log_file)
+    # loop main
     while True:
         try:
             main()
