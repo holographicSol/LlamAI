@@ -34,7 +34,7 @@ def main():
     askllama.load_ollama_log(log_file=log_file)
     # load data
     data = get_data()
-    # ask a question about the data
+    # ask a question about the data instead of the traditional way of creating infinite never ending  custom algorithms
     r = askllama.ask_ollama(log_file=log_file,
                              role='user',
                              content='Answer by responding exactly with either True of False (like pythonic bool).'
