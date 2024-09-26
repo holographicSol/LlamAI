@@ -41,6 +41,8 @@ def main():
                                      'According to the ping, am I online?: ' + str(data))
     print(r)
 
+    # do something, anything! on the local system, remote system(s), or send a message back over a COM port to control an embedded system
+
 
 if __name__ == '__main__':
     while True:
