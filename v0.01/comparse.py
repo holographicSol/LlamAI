@@ -12,7 +12,8 @@ def com_listen(com_num: str, baud_rate: int) -> str:
             incoming_data = arduino_connection.readline()
             if incoming_data:
                 tmp_data = incoming_data.decode('utf-8').strip()
-                data = data + tmp_data
+                if tmp_data.startswith('$SATCOM'):
+                    data = data + tmp_data
         return data
     except serial.SerialException as e:
         print(f"Error connecting to COM port: {e}")
